@@ -19,6 +19,9 @@ public class AnnotationsDemoApp {
 		
 		System.out.println(theCoach.getDailyWorkout());
 		
+		//call method to get daily fortune
+		System.out.println(theCoach.getDailyFortune());
+		
 		//Close the context
 		context.close();
 
