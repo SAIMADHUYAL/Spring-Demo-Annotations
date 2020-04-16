@@ -11,6 +11,8 @@ public class TennisCoach implements Coach {
 	//Define Field Injection 
 	//Configure @Autowired
 	@Autowired
+	
+	//Qualifier Annotation defines which implementation should we use
 	@Qualifier("happyFortuneService")
 	private FortuneService fortuneService;
 	@Override
