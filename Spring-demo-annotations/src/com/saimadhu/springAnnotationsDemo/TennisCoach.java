@@ -19,11 +19,33 @@ public class TennisCoach implements Coach {
 		return fortuneService.getFortune();
 	}
 	
-	@Autowired
-	public TennisCoach(FortuneService fortuneService) {
-		this.fortuneService = fortuneService;
+	public TennisCoach() {
+		System.out.println(">>> This is Default Constructor <<<");
 	}
 	
+	//Defining the setter method for Setter Method injection
+	//Configure with the @Autowired annotation
+//	@Autowired
+//	public void setFortuneService(FortuneService fortuneService) {
+//		System.out.println(">>> This is inside setFortuneService Method <<<");
+//		this.fortuneService = fortuneService;
+//	}
+//	
+	//Defining the constructor for the Construction injection
+	//Configure with the @Autowired annotation
+//	@Autowired
+//	public TennisCoach(FortuneService fortuneService) {
+//		this.fortuneService = fortuneService;
+//	}
+	
+	
+	//Defining Method injection
+	//configure any method with @Autowired for injection
+	@Autowired
+	public void thisIsMyMethod(FortuneService fortuneService) {
+		System.out.println("<<< This is inside any method >>>");
+		this.fortuneService = fortuneService;
+	}
 	
 
 }
