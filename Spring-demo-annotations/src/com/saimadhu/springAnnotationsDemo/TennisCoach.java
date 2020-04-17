@@ -13,7 +13,7 @@ public class TennisCoach implements Coach {
 	@Autowired
 	
 	//Qualifier Annotation defines which implementation should we use
-	@Qualifier("happyFortuneService")
+	@Qualifier("randomFortuneService")
 	private FortuneService fortuneService;
 	@Override
 	public String getDailyWorkout() {
