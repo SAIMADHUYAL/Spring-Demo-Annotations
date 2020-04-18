@@ -13,7 +13,7 @@ public class AnnotationsDemoApp {
 		
 		//Get the beans from the config file
 		
-		Coach theCoach = context.getBean("tennisCoach",Coach.class);
+		Coach theCoach = context.getBean("beanLifeCycleAnnotationMethods",Coach.class);
 		
 		//Call the methods
 		
